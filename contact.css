@@ -1,0 +1,176 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.support-btn {
+    display: inline-block;
+    width: 60px; 
+    height: 60px; 
+    background-color:#007bff;
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    line-height: 60px; 
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: background-color 0.1s ease;
+}
+.support-btn:hover {
+    background-color: #005ec3;
+}
+.logo img {
+max-width: 100px; 
+height: auto; 
+}
+header {
+    
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-heading {
+    flex: 1;
+}
+
+.logo {
+transition: transform 0.3s ease;
+}
+.logo:hover {
+transform: scale(1.2); 
+}
+.query-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.query-section h2 {
+    margin-bottom: 10px;
+}
+
+.query-section input,
+.query-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.query-section textarea {
+    resize: none;
+}
+
+.query-section button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.query-section button:hover {
+    background-color: #0056b3;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.linkedin-logo,
+.instagram-logo,
+.threads-logo,
+.webcraft-logo {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s;
+}
+
+.linkedin-logo {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174857.png');
+}
+
+.instagram-logo {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png');
+}
+
+.threads-logo {
+    background-image: url('https://vectorseek.com/wp-content/uploads/2023/07/Threads-with-Instagram-colors-Logo-Vector.jpg'); /* Replace with your Threads logo URL */
+}
+.webcraft-logo{
+    background-image: url('https://e7.pngegg.com/pngimages/664/784/png-clipart-cursive-letter-case-alphabet-w-calligraphy-letter-text-logo-thumbnail.png');
+}
+.linkedin-logo:hover,
+.instagram-logo:hover,
+.threads-logo:hover,
+.webcraft-logo:hover {
+    opacity: 0.7;
+    transform: scale(1.2); 
+}
+/* Flexbox layout */
+label, input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Set up a flex container for labels and inputs */
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Each label and input takes half of the available width */
+  label, input {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  
+  /* Add some spacing between label and input */
+  label {
+    margin-right: 10px;
+  }
+.par {
+    color: #777;
+}  

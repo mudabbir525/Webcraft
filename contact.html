@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="webcraft-logo.png" alt="Your Company Logo">
+        </div>
+        
+        <nav class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="container">
+        <h1 class="contact-heading">Contact Us</h1>
+        <div class="contact-info">
+            <span class="contact-icon">&#9742;</span>
+            <p>Mobile: +91 9876543210</p>
+        </div>
+        <div class="contact-info">
+            <span class="contact-icon">&#9993;</span>
+            <p>Email: sohailmudabbir@gmail.com</p>
+        </div>
+        <a href="mailto:sohailmudabbir@gmail.com" class="support-btn">&#9993;</a>
+        <p class="par">If you need any support, click the mail button to send us an email.</p>
+    </div>
+    <div class="query-section">
+        <h2>Book your slot Today!:</h2>
+        <form id="queryForm">
+            <label for="date">Select date:</label>
+            <input type="date" name="date" id="date">
+            <label for="time">Select time:</label>
+            <input type="time" name="time" id="time">
+            <label for="number" name="number" id="number">Phone number:</label>
+            <input type="number">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="nav-button" onclick="sendCommentByEmail()">Submit</button>
+            <p class="par">We will contact you after you book the slot.</p>
+        </form>
+    </div>
+    <script>
+    function sendCommentByEmail() {
+        const comment = document.getElementById("message").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const number = document.getElementById("number").value;
+      
+        const subject = "Query to webcraft";
+        const recipient = "sohailmudabbir@gmail.com";
+      
+        // Combine the comment, date, and time values in the body of the email
+        const body = `${comment}\n\nSelected Date: ${date}\nSelected Time: ${time} \nSelected Time: ${number}`;
+        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+      }
+        const feedbackForm = document.getElementById('queryForm');
+        queryForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you, your slot has been booked!');
+      });
+
+    </script>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 webcraft. All rights reserved.</p>
+            
+        </div>
+        <div class="social-icons">
+            <a href="#" class="linkedin-logo" onclick="window.open('https://www.linkedin.com/in/mohammed-mudabbir-pasha-9a135321b/')"></a>
+            <a href="#" class="instagram-logo" onclick="window.open('https://www.instagram.com/mysteriosohail/?hl=en')"></a>
+            <a href="#" class="threads-logo" onclick="window.open('https://www.threads.net/@mysteriosohail')"></a>
+            <a href="landing.html" class="webcraft-logo"></a>
+            
+        </div>
+        </footer>
+    
+
+</body>
+</html>

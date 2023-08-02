@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="webcraft-logo.png" alt="Your Company Logo">
+        </div>
+        <nav class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <div class="about-content">
+                <h2>About Webcraft Solutions</h2>
+                <p>
+                    At Webcraft Solutions, we are passionate about crafting exceptional web experiences that
+                    empower businesses to thrive in the digital world. With expertise in web design
+                    and development, we take pride in our ability to understand your unique needs and translate
+                    them into visually stunning and highly functional websites.
+                </p>
+                <p>
+                    Our team of dedicated experts works tirelessly to create innovative and tailor-made
+                    solutions that align with your business goals. We believe in delivering nothing short of
+                    excellence and are committed to providing exceptional customer service and support.
+                </p>
+                <p>
+                    Whether you are a startup, a small business, or a large enterprise, we have the knowledge,
+                    skills, and creativity to elevate your online presence and drive success. Let us be your
+                    partner in this digital journey and unlock the true potential of your business online.
+                </p>
+        </div>
+        </section>
+    </main><section class="ceo-section">
+        <div class="ceo-info">
+          <h2>Meet Our CEO</h2>
+          <div>
+            <a href="https://www.linkedin.com/in/mohammed-mudabbir-pasha-9a135321b/" target="_blank">
+                <img src="ceo.jpg" alt="Md Mudabbir Pasha" class="ceo-image">
+              </a>
+          </div>
+          
+          <p class="ceo-intro">Md Mudabbir Pasha is the founder and CEO of Webcraft Solutions.</p>
+          <div class="more-info" style="display: none;">
+            <p>Md Mudabbir Pasha is currently pursuing his BTech degree in Sreenidhi Institute of Science and Technology, where he continues to expand his knowledge and expertise in the field of web development and design.</p>
+            <p>Under his leadership, Webcraft Solutions has flourished into a prominent player in the web industry, offering top-notch services and innovative solutions to clients worldwide.</p>
+            <!-- Add any other details you'd like to include here -->
+          </div><div class="know-more" onclick="toggleMoreInfo()">
+            <p>Know More...</p>
+            <i class="fa-solid fa-circle-down"></i>
+          </div>
+      </section>
+      <script>
+        function toggleMoreInfo() {
+  const moreInfoDiv = document.querySelector(".more-info");
+  const knowMore = document.querySelector(".know-more");
+  
+  if (moreInfoDiv.style.display === "none") {
+    moreInfoDiv.style.display = "block";
+    knowMore.classList.add("active");
+    knowMore.style.display = "none"; // Hide "Know More" once the paragraphs are displayed
+  } else {
+    moreInfoDiv.style.display = "none";
+    knowMore.classList.remove("active");
+    knowMore.style.display = "block"; // Show "Know More" again when the paragraphs are hidden
+  }
+}
+
+      </script>
+            
+
+
+
+
+
+
+
+    <footer>
+        
+        <div class="terms">
+            <p>&copy; 2023 Webcraft. All rights reserved.</p>
+            <p>All website designs, developments, and content created by WebCraft Solutions are protected under copyright laws. Unauthorized reproduction or use of any material without prior written consent is strictly prohibited</p>
+            <p>WebCraft Solutions is committed to maintaining the confidentiality of client information and ensuring data security. However, we cannot be held liable for any third-party breaches or unauthorized access to client data.</p>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="linkedin-logo" onclick="window.open('https://www.linkedin.com/in/mohammed-mudabbir-pasha-9a135321b/')"></a>
+            <a href="#" class="instagram-logo" onclick="window.open('https://www.instagram.com/mysteriosohail/?hl=en')"></a>
+            <a href="#" class="threads-logo" onclick="window.open('https://www.threads.net/@mysteriosohail')"></a>            
+        </div>
+    </footer>
+</body>
+</html>
