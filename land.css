@@ -1,0 +1,311 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header Styles */
+header {
+    background-color: #444;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+header .logo img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: scale(1.2);
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #b4cde8;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav ul li:hover a {
+    color: #b4cde8;
+    transform: scale(1.1);
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #007bff;
+    color: #fff;
+    background-image: linear-gradient(135deg, #007bff 25%, #004d80 75%);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Features Section Styles */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0;
+}
+
+.feature-box {
+    text-align: center;
+    width: 30%;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box i {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.feature-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature-box p {
+    font-size: 18px;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Modal Styles */
+.login-modal,
+.signup-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-content:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #007bff;
+}
+
+.login-modal h2,
+.signup-modal h2 {
+    margin-bottom: 20px;
+}
+
+.login-modal form,
+.signup-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-modal label,
+.signup-modal label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-modal input[type="text"],
+.login-modal input[type="password"],
+.signup-modal input[type="text"],
+.signup-modal input[type="email"],
+.signup-modal input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-modal input[type="text"]:focus,
+.login-modal input[type="password"]:focus,
+.signup-modal input[type="text"]:focus,
+.signup-modal input[type="email"]:focus,
+.signup-modal input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-modal input[type="submit"],
+.signup-modal input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-modal input[type="submit"]:hover,
+.signup-modal input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Icon Logos */
+.linkedin-logo,
+.instagram-logo,
+.threads-logo,
+.webcraft-logo {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.linkedin-logo {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174857.png');
+}
+
+.instagram-logo {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png');
+}
+
+.threads-logo {
+    background-image: url('https://vectorseek.com/wp-content/uploads/2023/07/Threads-with-Instagram-colors-Logo-Vector.jpg');
+}
+
+.webcraft-logo {
+    background-image: url('https://e7.pngegg.com/pngimages/664/784/png-clipart-cursive-letter-case-alphabet-w-calligraphy-letter-text-logo-thumbnail.png');
+}
+
+.linkedin-logo:hover,
+.instagram-logo:hover,
+.threads-logo:hover,
+.webcraft-logo:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+/* Terms and Conditions */
+.terms {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.terms:hover {
+    color: #333;
+}
